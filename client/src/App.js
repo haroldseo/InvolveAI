@@ -1,25 +1,17 @@
 import React, { useState, useEffect } from "react";
 
 function App() {
-  const [backendData, setBackendData] = useState([{}]);
+  const [openAIData, setOpenAIData] = useState("");
 
   useEffect(() => {
     fetch("/api")
       .then((res) => res.json())
       .then((data) => {
-        setBackendData(data);
+        setOpenAIData(data);
       });
   }, []);
 
-  return (
-    <div>
-      {typeof backendData.users === "undefined" ? (
-        <div>Loading...</div>
-      ) : (
-        backendData.users.map((user, i) => <div key={i}>{user}</div>)
-      )}
-    </div>
-  );
+  return <div>{typeof openAIData === "undefined" ? <div>Loading...</div> : <div>{openAIData}</div>}</div>;
 }
 
 export default App;
