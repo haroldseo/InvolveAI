@@ -22,9 +22,13 @@ const runOpenAI = async () => {
 //Generates dynamic prompt for model
 const generatePrompt = async () => {
   const prompt = PromptTemplate.fromTemplate(
-    "If provided a short description of {this}, can you generate promotional content for it and tailor it for {social}?"
+    "Here is a short description of this {category}: {description}, can you generate promotional content for it and tailor it for {social}"
   );
-  const promptResponse = await prompt.format({ this: "product", social: "Twitter" });
+  const promptResponse = await prompt.format({
+    category: "product",
+    description: "Awesome cooling technology",
+    social: "Twitter",
+  });
   console.log(promptResponse);
 };
 generatePrompt();
