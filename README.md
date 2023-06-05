@@ -72,7 +72,7 @@ npm run dev
 3. The application will send the user input to the server and generate promotional content using the OpenAI API.
 4. Once the generation is complete, the content will be displayed on the screen.
 
-[![Watch the video]()](assets/Screen Recording 2023-06-05 at 10.25.54 AM.mov)
+https://github.com/haroldseo/InvolveAI/assets/30673523/b597b363-1e79-4262-a3fe-16c021d62646
 
 ### Future Features
 
