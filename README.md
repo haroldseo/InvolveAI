@@ -65,6 +65,15 @@ npm run dev
 
 5. Access the application in your browser at `http://localhost:3000`
 
+## Usage
+
+1. Fill in the category, description, and social media platform in the input form.
+2. Click the "Generate" button.
+3. The application will send the user input to the server and generate promotional content using the OpenAI API.
+4. Once the generation is complete, the content will be displayed on the screen.
+
+[![Watch the video]()](assets/Screen Recording 2023-06-05 at 10.25.54 AM.mov)
+
 ### Future Features
 
 - Incorporate LangChain Agents to action on OpenAI responses (Post on social media, send emails, etc)
