@@ -1,6 +1,17 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
 .input-form {
   max-width: 400px;
-  margin: 0 auto;
+  margin: 20px auto 0;
   text-align: center;
 }
 
@@ -10,13 +21,14 @@
   padding: 6px 10px;
   margin: 10px 0;
   border: 1px solid #ddd;
-  box-sizing: border-box;
+  border-radius: 8px;
   display: block;
 }
 
 .input-form textarea {
   resize: none;
   max-width: 400px;
+  height: 150px;
 }
 
 .input-form button {

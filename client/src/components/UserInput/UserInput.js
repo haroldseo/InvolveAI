@@ -7,6 +7,7 @@ function UserInput({ setUserInput }) {
   const [description, setDescription] = useState("");
   const [social, setSocial] = useState("");
 
+  //Updates userInput stat
   const onInputFormSubmit = (e) => {
     e.preventDefault();
     setUserInput({ category: category, description: description, social: social });
